@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Brief</title>
+</head>
+
+<body>
+    <header>
+        <div class="nvbar">
+            <div class="logo">
+                <br>
+                <img src="images/logo.png">
+            </div>
+            <ul class="links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="spots.html">Spots</a></li>
+                <li><a href="brief.html" class="home-link">Brief History</a></li>
+                <li><a href="contactAndMap.html">Map and Contact</a></li>
+            </ul>
+            <a href="contactAndMap.html" class="action_btn">Next Page</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="spots.html">Spots</a></li>
+            <li><a href="brief.html" class="home-link">Brief History</a></li>
+            <li><a href="contactAndMap.html">Map and Contact</a></li>
+            <li><a href="contactAndMap.html" class="action_btn">Next Page</a></li>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <br>
+            <h1>Brief History</h1>
+            <br>
+            <p>Spain settled Mactan Island around the sixteenth century. The town of Opon was founded by Augustinian
+                friars in 1730, and it was incorporated as a city in 1961. The island's chieftain, Datu Lapulapu, was
+                the inspiration behind the renaming of the area. In the Battle of Mactan, which took place in 1521 and
+                is remembered at the Mactan Shrine in Barangay Mactan, Ferdinand Magellan led a landing party of forty
+                men to resupply, but they were ambushed by 1,500 locals, killing their captain and a few other men.
+            </p>
+            <br>
+            <p>
+                A military government was established during the Filipino-American War, and on July 17, 1901, the United
+                States government reinstated military rule over the province due to the Cebu people's persistent
+                resistance. In 1905, Opon held its first municipal election, with Pascual dela Serna winning the
+                position of town president.
+            </p>
+            <br>
+            <p>
+                Due to the existence of large oil storage tanks in Opon, the town became the target of Japanese raids
+                one week after World War II broke out in December 1941. Of the approximately fourteen oil storage tanks
+                at Opon, the enemy aircraft managed to blow up two of them. On April 10, 1942, a Japanese Imperial
+                Forces unit from the Kawaguchi Detachment made landfall on Cebu's east coast. Subsequently, Harry Fenton
+                of the Cebu Resistance Movement's northern unit and Colonel James M. Cushing of the movement's center
+                and southern troops formed the resistance movement.
+            </p>
+        </section>
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+    <div class="footer">
+        <p style="font-weight: bold;">© 2023 - 2024 ITP4 | All Right Reserved</p>
+    </div>
+</body>
+
+</html>

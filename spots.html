@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spots</title>
+</head>
+
+<body>
+    <div class="nvbar">
+        <div class="logo">
+            <br>
+            <img src="images/logo.png">
+        </div>
+        <ul class="links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="spots.html" class="home-link">Spots</a></li>
+            <li><a href="brief.html">Brief History</a></li>
+            <li><a href="contactAndMap.html">Map and Contact</a></li>
+        </ul>
+        <a href="brief.html" class="action_btn">Next Page</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <div class="dropdown_menu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="spots.html" class="home-link">Spots</a></li>
+        <li><a href="brief.html">Brief History</a></li>
+        <li><a href="contactAndMap.html">Map and Contact</a></li>
+        <li><a href="brief.html" class="action_btn">Next Page</a></li>
+    </div>
+    </header>
+    <div class="card-container">
+        <div class="card">
+            <img src="images/1CaohaganIsland.jpg">
+            <h1>Caohagan Island</h1>
+            <p>
+                Caohagan Island, sometimes spelled Cawhagan, lies in the Cebu Strait within the Philippines, forming
+                part of the Olango Island Group near Mactan Island. Governed by Lapu-Lapu city, it offers a tranquil
+                retreat amidst turquoise waters.
+            </p>
+            <a href="https://www.tripadvisor.com.ph/Attraction_Review-g298461-d6498210-Reviews-Caohagan_Island-Lapu_Lapu_Mactan_Island_Cebu_Island_Visayas.html "
+                class="card-button">Read More</a>
+        </div>
+
+        <div class="card">
+            <img src="images/2olangoIsland.jpg">
+            <h1>Olango Island</h1>
+            <p>
+                Olango Island, nestled in the Central Visayas, comprises Olango and six satellite islets—Caubian,
+                Camungi, Caohagan, Gilutongan, Nalusuan, Pangan-an, and Sulpa—forming a picturesque ensemble.
+            </p>
+            <a href="https://www.tripadvisor.com.ph/Attraction_Review-g294261-d1858471-Reviews-Olango_Island-Cebu_Island_Visayas.html"
+                class="card-button">Read More</a>
+        </div>
+
+        <div class="card">
+            <img src="images/3sanVicenteMarineSanctuary.jpg">
+            <h1>San Vicente Marine Sanctuary</h1>
+            <p>
+
+                San Vicente Marine Sanctuary, a brief boat ride from Mactan, rests within the Olango group, fostering a
+                rich marine ecosystem. Visitors encounter diverse marine life, mangroves, and serene seas, offering
+                immersive nature experiences.
+            </p>
+            <a href="https://cebuphguide.wordpress.com/2021/04/07/san-vicente-marine-sanctuary-olango-island/"
+                class="card-button">Read More</a>
+        </div>
+        <div class="card">
+            <img src="images/Nalusuan Island.JPG">
+            <h1>Nalusuan Island</h1>
+            <p>
+
+                a hidden gem nestled in the breathtaking beauty of Cebu, Philippines. With its pristine white sandy
+                beaches, crystal-clear turquoise waters, and vibrant marine life, this 2.5-star hotel offers a tranquil
+                escape from the hustle and bustle of everyday life.
+            </p>
+            <a href="https://www.tripadvisor.com.ph/Attraction_Review-g2273715-d4541842-Reviews-Nalusuan_Island_Marine_Sanctuary-Cordova_Mactan_Island_Cebu_Island_Visayas.html"
+                class="card-button">Read More</a>
+        </div>
+
+        <div class="card">
+            <img src="images/4Magellan'sMarker.png">
+            <h1>Magellan's Marker</h1>
+            <p>
+                Located in Lapu-Lapu City, Mactan Island, Cebu province, the Magellan Shrine or Magellan Marker is a
+                memorial tower that honors the Portuguese explorer Ferdinand Magellan. The site is believed to be where
+                Magellan was killed during the Battle of Mactan in April 27, 1521.
+
+
+            </p>
+            <a href="https://www.trip.com/travel-guide/attraction/lapu-lapu-city/magellan-s-marker-95728/"
+                class="card-button">Read More</a>
+        </div>
+    </div>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+    <div class="footer">
+        <p style="font-weight: bold;">© 2023 - 2024 ITP4 | All Right Reserved</p>
+    </div>
+
+</body>
+
+</html>
