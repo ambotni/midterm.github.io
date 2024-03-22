@@ -57,6 +57,7 @@
 body{
     height: 100svh;
     background-color: #000;
+    background-repeat: no repeat;
     background-image: url('images/Dusit\ Thani\ Mactan\ Cebu\ Resort.png');
     background-size: cover;
     background-position: center;
